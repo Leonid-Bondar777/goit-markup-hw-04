@@ -4,13 +4,15 @@
 .list-text-decoration,
 .manu,
 .manu-contacts,
-.our-portfolio-link 
+.our-portfolio-link, 
+.our-team-icon
 {
     list-style-type: none;
 }
 
 .manu-contacts-link,
-.manu-link 
+.manu-link,
+.our-team-icon-link
 {
     text-decoration: none;
 }
@@ -222,12 +224,17 @@ body
 
 .order-service 
 {
-
+    display: block;
     padding-top: 188px;
     padding-bottom: 188px;
     background: rgba(46, 47, 66, 1);
-}
-
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/portfolio/people-office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    max-width: 1440px;
+    }
 
 .order-service-button 
 {
@@ -269,6 +276,8 @@ body
 
 
 /*  Section-Advantages */
+
+    
 
 .advantages 
 {
@@ -326,8 +335,39 @@ body
 
 /*  Section-Our-Team  */
 
+
+
+
+.our-team-icon{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 32px;
+
+}
+.our-team-icon-link {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(77, 90, 229, 1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.our-team-icon-link:hover {
+    background-color: #404BBF;
+}
+
+.our-team-icon-title {
+display: flex;
+justify-content: center;
+
+}
+
 .our-team 
 {
+    display: flex;
     background-color: #F4F4FD;
     text-align: center;
     text-transform: capitalize;
@@ -366,6 +406,7 @@ body
     text-align: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 
 }
 
@@ -451,3 +492,5 @@ body
     text-align: left;
     max-width: 264px;
     }
+
+  
