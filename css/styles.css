@@ -282,8 +282,24 @@ body
 
 /*  Section-Advantages */
 
+.advantages-icon-style {
     
-
+}
+ 
+    
+.advantages-icon {
+    display: flex;
+justify-content: center;
+align-items: center;
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    background: var(--CLOUD, #F4F4FD);
+    margin-bottom: 8px;
+    
+}
 .advantages 
 {
     padding-top: 120px;
