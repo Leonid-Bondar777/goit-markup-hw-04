@@ -5,14 +5,16 @@
 .manu,
 .manu-contacts,
 .our-portfolio-link, 
-.our-team-icon
+.our-team-icon,
+.footer-icon-list
 {
     list-style-type: none;
 }
 
 .manu-contacts-link,
 .manu-link,
-.our-team-icon-link
+.our-team-icon-link,
+.footer-icon-list
 {
     text-decoration: none;
 }
@@ -599,12 +601,35 @@ overflow: hidden;
 
 /*  footer  */
 
+.footer-container{
+display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.footer-lodo-content{
+    margin-right: 120px;
+}
+
+
+
+
+
 .footer-content {
     padding-top: 100px;
     padding-bottom: 100px;
     background: rgba(46, 47, 66, 1);
+    
 }
 
+.footer-title{
+        color: var(--WHITE, #FFF);    
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        
+}
 
 .footer-advice 
 {
