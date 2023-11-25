@@ -609,6 +609,12 @@ display: flex;
 .footer-lodo-content{
     margin-right: 120px;
 }
+.footer-icon-list {
+    display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin: 0;
+}
 
 
 
