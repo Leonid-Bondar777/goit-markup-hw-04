@@ -159,35 +159,40 @@ body
 
 /* manu  */
 
-
-.manu-link:focus,
-.manu-link:hover 
-{
-    color: #404BBF;
-}
-
-.manu-link:hover {
-    color: #404bbf;
-    background-color: #fff;
-}
-
-.manu-link .curren::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    background-color: #404bbf;
-    border-radius: 2px;
+.manu-link {
+    color: #2E2F42;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.curren {
-    position: relative;
-    color: #404BBF;
 
+.manu-link:hover,
+.manu-link:focus {
+    color: #404BBF;
 }
 
+.current {
+    position: relative;
+    color: #404BBF;
+}
+
+.manu-list .current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404BBF;
+}
 
 .icon-manu {
 
@@ -197,40 +202,14 @@ body
         background: #404BBF;
 }
 
-.manu 
-{
-        position: relative;     
-        overflow: hidden;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        padding: 24px 0 24px
-}
+     
+
 .manu-list 
 {
-    margin: 0;
     gap: 40px;
-    display: inline-flex;
-    align-items: flex-start;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    display: flex;
+       
 }
-
-
-.manu-link 
-{
-        display: block;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #2e2f42;
-        text-decoration: none;
-        padding: 24px 0;
-        position: relative;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
 
 /* manu  contacts */
 
